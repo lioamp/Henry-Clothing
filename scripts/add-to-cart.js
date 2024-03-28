@@ -141,6 +141,12 @@ function renderCart() {
     // Render grand total
     var grandTotalElement = document.getElementById("grandTotal");
     grandTotalElement.textContent = "Grand Total: $" + totalPrice.toFixed(2);
+
+    // Event listener for "Proceed to Checkout" button
+    var checkoutButton = document.getElementById("checkoutButton");
+    checkoutButton.addEventListener("click", function() {
+        alert("This button doesn't do anything.");
+    });
 }
 
 // Load cart items from localStorage when the page loads
